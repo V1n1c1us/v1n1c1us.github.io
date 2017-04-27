@@ -1,1 +1,23 @@
-body{ background: #09f;}
+/* SAFE AREA */
+.safe-area{
+	height: 100vh;
+	background-color: #fcdb00;
+	padding-top: 1rem;
+}
+/* em = tamanho da font size do elemento pai*/
+/* rem = tamanho da font size do elemento HTML*/
+
+/* HEADER */
+.header{
+	height: 60px;
+}
+
+.nav-link{
+	color: #000000;
+	font-weight: bold;
+}
+
+.nav-link:hover{
+	text-decoration: underline;
+	color: #000000;
+}
