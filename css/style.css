@@ -1,7 +1,7 @@
 /* SAFE AREA */
 .safe-area{
-	height: 100vh;
-	background-color: #fcdb00;
+	height: 30rem;
+	background-color: #e58437;
 	padding-top: 1rem;
 }
 /* em = tamanho da font size do elemento pai*/
@@ -24,3 +24,20 @@
 .teste2{
     background: blue !important;
 }
+
+/*Global texts*/
+.headline{
+	font-size: 2rem;
+}
+
+.description{
+	font-size: 1.3rem;
+}
+
+.text{
+	font-size: .85rem;
+	color: #898989;
+}
+
+
+
