@@ -1,101 +1,85 @@
-	<!DOCTYPE html>
-	<html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta property="og:image" content="https://v1n1c1us.github.io/img/logo.png">
-	<meta property="og:image:type" content="image/png">
-		<title></title>
-		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-		 <link rel="stylesheet" type="text/css" href="css/style.css">
-		 <script>
-// Set the date we're counting down to
-var countDownDate = new Date("Jule 19, 2017 16:00:00").getTime();
+<!DOCTYPE html>
+<html lang="en">
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-  // Get todays date and time
-  var now = new Date().getTime();
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="index.html"><img src="logo.png" alt="Connect Mark logo" class="logo"></a>
+                    </div>
+                    <div class="col-md-9">
+                        <ul class="menu js-menu">
+                            <li><a href="#destaque">Serviços</a></li>
+                            <li><a href="#cliente">Portfólio</a></li>
+                            <li><a href="#valor">Preços</a></li>
+                            <li><a href="#formulario">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-text-box">
+            <h1 class="js-wp-2 animated fadeInUp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore dignissimos !</h1>
+            <a class="btn btn-full" href="#">Site Personalizado</a>
+            <a class="btn btn-ghost" href="#">Tecnologia</a>
+        </div>
+    </header>
+    <section class="middle">
+        <div class="container">
+            <h2>TíTULO</h2>
+            <p class="texto">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore dignissimos! Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Labore dignissimos Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore dignissimos! Lorem
+                ipsum, dolor sit amet consectetur adipisicing elit. Labore dignissimos
+            </p>
+            <div class="row">
+                <div class="col-md-3 box">
+                    <i class="fa fa-user"></i>
+                    <h3>TESTE !</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore dignissimos! Lorem ipsum, dolor sit
+                        amet consectetur adipisicing Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore dignissimos!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                    </p>
+                </div>
+                <div class="col-md-3 box">
+                    <i class="fa fa-user"></i>
+                    <h3>TESTE !</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore dignissimos! Lorem ipsum, dolor sit
+                        amet consectetur adipisicing Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore dignissimos!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                    </p>
+                </div>
+                <div class="col-md-3 box">
+                    <i class="fa fa-user"></i>
+                    <h3>TESTE !</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore dignissimos! Lorem ipsum, dolor sit
+                        amet consectetur adipisicing Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore dignissimos!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                    </p>
+                </div>
+                <div class="col-md-3 box">
+                    <i class="fa fa-user"></i>
+                    <h3>TESTE !</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore dignissimos! Lorem ipsum, dolor sit
+                        amet consectetur adipisicing Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore dignissimos!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</body>
 
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-	</head>
-	<body>
-	<div class="safe-area">
-		<div class="container">
-		<header>
-			<div class="header">
-				<div class="row">
-					<div class="col-md-8">
-						<img src="img/logo.png" alt="">
-					</div>
-					<div class="col-md-4">
-					<nav class="nav">
-	  					<a class="nav-link active" href="#">HOME</a>
-	  					<a class="nav-link" href="#">SOBRE</a>
-						<a class="nav-link" href="#">CONTATO</a>
-	  				</nav>
-	  			</div>
-			</div>
-			</div>
-			</header><!-- /header -->
-
-		<div id="carousel" class="carousel slide" data-ride="carousel">
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<div class="row">
-						<div class="col">
-							<h2 class="headline">Teste teste</h2>
-							<p class="description">asdasdasdasdasd</p>
-							<p class="text">asdasdasd</p>
-						</div>
-						<div class="col">
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<div class="row">
-						<div class="col">
-							<h2 class="headline">Teste teste</h2>
-							<p class="description">asdasdasdasdasd</p>
-							<p class="text">asdasdasd</p>
-						</div>
-						<div class="col">
-						</div>
-					</div>
-				</div>
-				<ol class="carousel-indicators">
-					<li data-target="#carousel" data-slide-to="0" class="active"></li>
-    				<li data-target="#carousel" data-slide-to="1"></li>
-				</ol>
-			</div>
-		</div>
-
-		</div>
-	</div>
-<!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <svg id="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" style="position:absolute; padding-top:0; margin-top:0;fill: #dd9933; stroke: #dd9933; top:0px;" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 0 C 50 100 80 100 100 0 Z"></path></svg>
-	</body>
-	</html>
+</html>
