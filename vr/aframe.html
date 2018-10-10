@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+  </head>
+  <body>
+      <a-scene>
+          <a-assets>
+            <a-asset-item id="house-obj" src="house2.obj"></a-asset-item>
+            <a-asset-item id="house-mtl" src="house2.mtl"></a-asset-item>
+            <a-asset-item id="grass-obj" src="Grass_02.obj"></a-asset-item>
+            <a-asset-item id="grass-mtl" src="Grass_02.mtl"></a-asset-item>
+            <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+            <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
+          </a-assets>
+          <a-entity id="rain" particle-system="preset: rain; color: #24CAFF; particleCount: 1000"></a-entity>
+          <a-entity position="20 0 0" rotation="0 45 0">
+          <!-- Using the asset management system. -->
+          <a-obj-model src="#house-obj" mtl="#house-mtl"></a-obj-model>
+        
+          <!-- Defining the URL inline. Not recommended but may be more comfortable. -->
+          <a-obj-model src="house2.obj" mtl="house2.mtl"></a-obj-model>
+        </a-entity>
+        <a-entity position="15 0 0" rotation="0 95 0">
+            <!-- Using the asset management system. -->
+            <a-obj-model src="#house-obj" mtl="#house-mtl"></a-obj-model>
+          
+            <!-- Defining the URL inline. Not recommended but may be more comfortable. -->
+            <a-obj-model src="house2.obj" mtl="house2.mtl"></a-obj-model>
+          </a-entity>
+          <a-entity position="10 0 0" rotation="0 15 0">
+              <!-- Using the asset management system. -->
+              <a-obj-model src="#house-obj" mtl="#house-mtl"></a-obj-model>
+            
+              <!-- Defining the URL inline. Not recommended but may be more comfortable. -->
+              <a-obj-model src="house2.obj" mtl="house2.mtl"></a-obj-model>
+            </a-entity>
+               
+            <a-entity position="10 0 -10" rotation="0 0 0">
+                <!-- Using the asset management system. -->
+                <a-obj-model src="#grass-obj" mtl="#grass-mtl"></a-obj-model>
+              
+                <!-- Defining the URL inline. Not recommended but may be more comfortable. -->
+                <a-obj-model src="Grass_02.obj" mtl="Grass_02.mtl"></a-obj-model>
+              </a-entity>
+
+          <a-cylinder id="ground" src="#groundTexture" radius="32" height="0.1"></a-cylinder>
+          <a-sky id="bg" radius="30" src="#skyTexture" theta-length="90"></a-sky>
+        </a-scene>
+  </body>
+</html>
